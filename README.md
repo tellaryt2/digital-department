@@ -1,1 +1,3 @@
 # digital-department
+
+Учебный репозиторий
