@@ -3,18 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <title>Название документа (страницы)</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <header></header>
+    <footer></footer>
+    <fonts></fonts>
+    <icons></icons>
+    <card></card>
     <h1>Заголовок страницы</h1>
     <p title= "123">Параграф текста 123 </p>
       <div class="article">
-        <h1>Основы HTML</h1>
+        <h1 class="title page-title"> Основы HTML</h1>
+
         <p>
         HTML - это <span style="color: red">язык разметки</span>
         документов во Всемирной паутине
         </p>
         <p>Теги - это элементы, отвечающие за структуру HTML-документа</p>
         <a href="https://github.com/">GitHub</a>
+      </div>
+      <div class="popup">
+        <button class="popup__button button">
+          Назад
+        </button>
+
+        <button
+          class="popup__button
+            popup__button-–no-margin
+            button
+            button-–red"
+          >
+          Отправить
+        </button>
       </div>
   </body>
 </html>
