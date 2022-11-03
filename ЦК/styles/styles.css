@@ -73,7 +73,7 @@ body {
     color: red;
 }
 
-.page-header_nav-link:active {
+.page-header_nav-link::after {
         color: red;
 }
 
@@ -154,7 +154,7 @@ body {
     position: relative;
 }
 
-.events-card_picture:before {
+.events-card_picture::before {
     position: absolute;
     display: block;
     padding-top: 107.16%;
@@ -162,7 +162,7 @@ body {
 }
 
 .events-card_img {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
