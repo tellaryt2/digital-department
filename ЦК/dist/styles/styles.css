@@ -171,6 +171,88 @@ img {
 .event {
   padding: 40px 0 150px;
 }
+.blog-card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.blog-card__link {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 60px;
+  display: block;
+  max-width: 467px;
+  width: 100%;
+}
+.blog-card__picture {
+  margin-right: 60px;
+  display: block;
+  position: relative;
+  max-width: 467px;
+  width: 100%;
+}
+.blog-card__picture::before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 62.312%;
+}
+.blog-card__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.blog-card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blog-card__info-time {
+  display: block;
+  margin-bottom: 70px;
+  font-weight: 300;
+  font-size: 16px;
+  color: #1f1e1e;
+}
+.blog-card__title-link:hover .blog-card__title,
+.blog-card__title-link:active .blog-card__title,
+.blog-card__title-link:hover .blog-card__icon,
+.blog-card__title-link:active .blog-card__icon {
+  color: #A51505;
+}
+.blog-card__title-link:hover .blog-card__title,
+.blog-card__title-link:active .blog-card__title {
+  text-decoration-color: #A51505;
+}
+.blog-card__title {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  margin: 0;
+  font-weight: 700;
+  color: #1f1e1e;
+  -webkit-transition: color 0.2s, text-decoration-color 0.2s;
+  -o-transition: color 0.2s, text-decoration-color 0.2s;
+  transition: color 0.2s, text-decoration-color 0.2s;
+}
+.blog-card__icon {
+  position: absolute;
+  right: 0;
+  bottom: 90px;
+  display: block;
+  color: #1f1e1e;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
 .page-header {
   position: fixed;
   top: 0;
@@ -248,4 +330,7 @@ img {
 }
 .page-header_nav-link:active {
   color: #BC3324;
+}
+.overflow-pp {
+  overflow: hidden;
 }
