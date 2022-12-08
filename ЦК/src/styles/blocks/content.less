@@ -1,0 +1,189 @@
+.content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 1.3em 0 0.8em;
+    font-weight: 700;
+    font-family: @font1;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+
+  }
+
+  p {
+    margin: 20px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul,
+  ol {
+    position: relative;
+    padding: 0;
+    list-style: none;
+    font-family: @font1;
+  }
+
+  ul > li {
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 14px;
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 8px;
+      left: 0;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: @red;
+      pointer-events: none;
+    }
+  }
+
+  ol > li {
+    counter-increment: li;
+    &::before {
+      content: counter(li) + ". ";
+      box-sizing: border-box;
+      display: inline-block;
+      min-width: 20px;
+      color: @red;
+      white-space: pre;
+    }
+  }
+
+  a {
+    font-weight: 600;
+    color: @black;
+    text-decoration: underline;
+    transition: color 0.2s;
+    cursor: pointer;
+    &:hover {
+      color: @red;
+    }
+  }
+
+  i {}
+
+  b {
+    font-weight: 700;
+  }
+
+  img,
+  iframe,
+  figure {
+     display: block;
+     max-width: 700px;
+   }
+
+   & > img,
+   & > iframe,
+   & > figure {
+     margin: 30px 0;
+     &:first-child {
+       margin-top: 0;
+     }
+     &:last-child {
+       margin-bottom: 0;
+     }
+   }
+
+   iframe {
+    border: none;
+    outline: none;
+  }
+
+  figure {
+     img {
+       max-width: 100%;
+       margin: 0;
+     }
+   }
+
+   figcaption {
+       margin: 15px 0;
+       color: fade(@black, 60%);
+       font-weight: 500;
+       font-size: 13px;
+       text-align: left;
+       &:first-child {
+         margin-top: 0;
+       }
+       &:last-child {
+         margin-bottom: 0;
+       }
+     }
+
+  blockquote {
+    box-sizing: border-box;
+    position: relative;
+    margin: 30px 0;
+    font-weight: 600;
+    line-height: 1.3;
+    padding-left: 24px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background-color: @red;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+  }
+}
+
+img {
+ &[align],
+ &.alignright {
+   margin: 5px 0;
+   & + figcaption {
+     display: none;
+   }
+ }
+ &[align="right"],
+ &.alignright {
+   margin-left: 10px;
+ }
+ &.alignright {
+   float: right;
+ }
+ &[align="left"],
+ &.alignleft {
+   margin-right: 10px;
+ }
+ &.alignleft {
+   float: left;
+ }
+}
+
+}
