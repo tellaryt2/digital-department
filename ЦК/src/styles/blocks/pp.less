@@ -21,5 +21,33 @@
     background-position: 0 0, 0 0;
     background-size: auto, 100% auto;
     background-repeat: repeat, repeat-y;
+    overflow-y: auto;  //добавление скролла вверх-вниз
+  }
+
+  &__container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 40px 40px;
+  }
+
+  &__title {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin: -40px 0 70px -85px;
+    padding: 10px 85px;
+    width: 595px;
+    min-height: 80px;
+    background-color: @black;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: @font1;
+    font-size: 22px;
+    line-height: 1.36;
+    color: @white;
+    letter-spacing: 0.02em;
+    z-index: 1;
   }
 }
