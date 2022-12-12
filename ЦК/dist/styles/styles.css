@@ -157,6 +157,13 @@ textarea textarea:focus::placeholder {
   max-width: 405px;
   min-width: 200px;
   width: calc(33.333% - 60px);
+  margin-top: 118px;
+}
+.events-card_title:hover {
+  color: #BC3324;
+}
+.events-card_title:active {
+  color: #BC3324;
 }
 .events-card_link {
   display: -webkit-box;
@@ -196,6 +203,18 @@ textarea textarea:focus::placeholder {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 -30px;
+}
+.listing_section-title {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 624px;
+  height: 62px;
+  background-color: #1f1e1e;
 }
 .reserve {
   display: grid;
@@ -731,6 +750,18 @@ textarea textarea:focus::placeholder {
   padding-left: 40px;
   padding-right: 40px;
 }
+.events_listing-text {
+  padding-top: 20px;
+}
+.events_listing-text2 {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.3;
+  font-size: 36px;
+  padding-top: 5px;
+  text-decoration: none;
+}
 .event {
   padding: 40px 0 150px;
 }
@@ -741,6 +772,7 @@ textarea textarea:focus::placeholder {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  padding-top: 100px;
 }
 .blog-card__link {
   -ms-flex-negative: 0;
@@ -814,7 +846,7 @@ textarea textarea:focus::placeholder {
 }
 .blog-card__icon {
   position: absolute;
-  right: 0;
+  right: 0px;
   bottom: 90px;
   display: block;
   color: #1f1e1e;
