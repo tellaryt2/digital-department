@@ -153,7 +153,7 @@ textarea textarea:focus::placeholder {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin: 0 30px 120px;
+  margin: 0 30px 100px;
   max-width: 405px;
   min-width: 200px;
   width: calc(33.333% - 60px);
@@ -215,6 +215,19 @@ textarea textarea:focus::placeholder {
   width: 624px;
   height: 62px;
   background-color: #1f1e1e;
+}
+.listing_section-title_listingend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 624px;
+  height: 62px;
+  background-color: #1f1e1e;
+  margin-bottom: 130px;
 }
 .reserve {
   display: grid;
@@ -677,6 +690,7 @@ textarea textarea:focus::placeholder {
   width: 100%;
   border-collapse: collapse;
   text-align: center;
+  margin-top: 60px;
 }
 .table__th {
   border-top: none;
@@ -752,6 +766,7 @@ textarea textarea:focus::placeholder {
 }
 .events_listing-text {
   padding-top: 20px;
+  width: 829px;
 }
 .events_listing-text2 {
   color: #FFFFFF;
@@ -761,6 +776,34 @@ textarea textarea:focus::placeholder {
   font-size: 36px;
   padding-top: 5px;
   text-decoration: none;
+}
+.events_listing-end {
+  padding-bottom: 15px;
+}
+.events_listing-end_link-text1 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 23px;
+}
+.events_listing-end_link-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  right: 0px;
+  bottom: 90px;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.events_listing-end_link:hover,
+.events_listing-end_link:active {
+  color: #A51505;
 }
 .event {
   padding: 40px 0 150px;

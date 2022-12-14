@@ -8,6 +8,7 @@
 
     &_listing-text {
       padding-top: 20px;
+      width: 829px;
     }
 
     &_listing-text2 {
@@ -20,4 +21,36 @@
       padding-top: 5px;
       text-decoration: none;
     }
+
+    &_listing-end {
+      padding-bottom: 15px;
+
+      &_link {
+
+        &-text1 {
+          align-items: center;
+          text-align: center;
+          margin-bottom: 23px;
+        }
+
+        &-icon {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 100px;
+          transform: rotate(90deg);
+          right: 0px;
+          bottom: 90px;
+          transition: color 0.2s;
+          }
+
+        &:hover,
+        &:active {
+          color: @red_hover;
+        }
+      }
+
+
+      }
+
 }
